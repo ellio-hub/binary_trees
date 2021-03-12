@@ -31,6 +31,6 @@ return (1);
 r_leaf = binary_tree_is_full(tree->right);
 l_leaf = binary_tree_is_full(tree->left);
 if (r_leaf == 0 || l_leaf == 0)
-return(s);
+return (s);
 return (1);
 }
