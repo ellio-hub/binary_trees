@@ -28,8 +28,8 @@ if (tree == NULL)
 return (s);
 if (binary_tree_is_leaf(tree) != 0)
 return (1);
-r_leaf = binary_tree_is_full(tree->r_leaf);
-l_leaf = binary_tree_is_full(tree->l_leaf);
+r_leaf = binary_tree_is_full(tree->right);
+l_leaf = binary_tree_is_full(tree->left);
 if (r_leaf == 0 || l_leaf == 0)
 return(s);
 return (1);
