@@ -16,7 +16,7 @@ return (s);
 }
 
 /**
- * binary_tree_is_full -  check if a binary tree is full
+ * binary_tree_is_full - check if a binary tree is full
  * @tree: pointer to the root node of the tree to check
  *
  * Return: 1 if tree is full, otherwise 0
@@ -30,7 +30,7 @@ if (binary_tree_is_leaf(tree) != 0)
 return (1);
 r_leaf = binary_tree_is_full(tree->r_leaf);
 l_leaf = binary_tree_is_full(tree->l_leaf);
-if (r_leaf != 0 || l_leaf != 0)
-s = 1;
-return (s);
+if (r_leaf == 0 || l_leaf == 0)
+return(s);
+return (1);
 }
